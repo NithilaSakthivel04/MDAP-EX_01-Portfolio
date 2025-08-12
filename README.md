@@ -117,139 +117,142 @@ index.html
 </body>
 </html>
 
-style.css
-/* General Reset */
+ style.css
+
+ /* ===== RESET ===== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* ===== BODY ===== */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background: #fff;
-    color: #333;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
 }
 
-/* Header */
+/* ===== HEADER ===== */
 header {
-    background: black;
-    color: gold;
-    padding: 1rem 2rem;
+  background: #222;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
 }
 
-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
-header .logo {
-    font-size: 1.5rem;
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
 }
 
-header ul {
-    display: flex;
-    list-style: none;
+header nav a:hover {
+  color: #ff9800;
 }
 
-header ul li {
-    margin-left: 20px;
+/* ===== SECTIONS ===== */
+section {
+  padding: 50px 20px;
+  max-width: 1100px;
+  margin: auto;
 }
 
-header ul li a {
-    color: gold;
-    text-decoration: none;
-    font-weight: bold;
+#about, #projects, #contact {
+  background: #fff;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
 }
 
-/* Hero */
-.hero {
-    background: url('https://via.placeholder.com/1200x500') no-repeat center center/cover;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
+/* ===== ABOUT ===== */
+#about h2 {
+  color: #ff9800;
+  margin-bottom: 15px;
 }
 
-.hero-content h2 {
-    font-size: 2.5rem;
+#about p {
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
-.hero-content span {
-    color: gold;
+/* ===== PROJECTS ===== */
+#projects h2 {
+  color: #ff9800;
+  margin-bottom: 15px;
 }
 
-.btn {
-    background: gold;
-    color: black;
-    padding: 10px 20px;
-    display: inline-block;
-    margin-top: 15px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
+.project {
+  background: #fafafa;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-left: 5px solid #ff9800;
+  border-radius: 5px;
 }
 
-/* About */
-.about {
-    padding: 3rem 2rem;
-    text-align: center;
+.project h3 {
+  margin-bottom: 8px;
 }
 
-/* Portfolio */
-.portfolio {
-    padding: 3rem 2rem;
-    text-align: center;
+.project p {
+  font-size: 0.95rem;
 }
 
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-    margin-top: 20px;
+/* ===== CONTACT ===== */
+#contact h2 {
+  color: #ff9800;
+  margin-bottom: 15px;
 }
 
-.portfolio-grid img {
-    width: 100%;
-    border-radius: 10px;
+form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
 }
 
-/* Contact */
-.contact {
-    padding: 3rem 2rem;
-    text-align: center;
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
-.contact form {
-    max-width: 500px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
+form textarea {
+  resize: vertical;
+  min-height: 120px;
 }
 
-.contact input,
-.contact textarea {
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ccc;
+form button {
+  background: #ff9800;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
-.contact button {
-    border: none;
-    cursor: pointer;
+form button:hover {
+  background: #e68a00;
 }
 
-/* Footer */
+/* ===== FOOTER ===== */
 footer {
-    background: black;
-    color: gold;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 20px;
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
 }
 
 
